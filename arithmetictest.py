@@ -44,8 +44,6 @@ class_number = input("Please enter class number: ")
 
 score = Quiz(name)
 
-#Userscore = (name, '', str(score), '')
-
 if (int(class_number)==1):
     with open ('class1.csv', 'a') as myFile:
         writer =csv.writer(myFile, delimiter=' ')
