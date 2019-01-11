@@ -13,11 +13,12 @@ def randomCalc():
     while True:
         random_a = randint(0,9)
         random_b = randint(0,9)
-
         random_c = random.choice(list(symbols.keys()))
+        
         if not (random_c =="/" and random_b ==0):
 #get Answer by accessing dictionary value using "symbols[key]"and applying it between random_a and random_b
             Answer = symbols[random_c](random_a,random_b)
+    #print dictionary key of random_c within this formatted string
             print("what is {} {} {} ?\n".format(random_a, random_c, random_b))
             return Answer
 
